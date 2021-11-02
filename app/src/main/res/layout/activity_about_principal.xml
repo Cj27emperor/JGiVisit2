@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutPrincipal">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorBackground"
+        android:elevation="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/jainlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to JGI"
+            android:layout_margin="20dp"
+            android:textColor="@color/textColor"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollabout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/round"
+            android:elevation="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pro Chacellor"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Col (Hony.)Dr. N Sundararajan"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Vice Chancellor"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Professor (Dr.) Raj Singh"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pro Vice Chancellor"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Easwaran Iyer"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Registrar"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. N.V.H. Krishnan"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Joint Registrar"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. M.S. Santhosh"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Finance Officer, JAIN (Deemed-to-be University)"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. S.L. Ramamurthy"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director - Academic and Planning"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Prof. Sridhara Murthy"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dean - Faculty of Languages"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Mythili P Rao"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dean - Faculty of Management and Director - Admissions"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Dinesh Nilkant"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dean - Student Welfare"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Rajani Jairam"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director - Internal Quality Assurance Cell"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Asha Rajiv"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director, Communications, Human Resources and Student Fee Services"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ms. Aparna Prasad"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director - Projects and Facilities"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. M.S. Parswanath"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deputy Controller of Examinations"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Parthasarathy"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deputy Controller of Examinations"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Gopal Krishna"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Deputy Finance Officer"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. N. Babu"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Director, Research"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. S.A. Hariprasad"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="10dp"
+                android:background="@drawable/principle_line">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Coordinator – Research Programmes"
+                    android:textSize="30dp"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Mythili P Rao"
+                    android:textSize="25dp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_margin="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round"
+        android:backgroundTint="@color/colorBackground"
+        android:elevation="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/jainlogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to JGI"
+            android:layout_margin="20dp"
+            android:textColor="@color/textColor"
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/university"
+        android:onClick="university"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round"
+        android:text="University"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <Button
+        android:id="@+id/chancellor"
+        android:onClick="chancellor"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round"
+        android:text="Chancellor"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/university"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <Button
+        android:id="@+id/Prince"
+        android:onClick="principal"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round"
+        android:text="Principal\n-officers"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@+id/university"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.15"/>
+
+    <Button
+        android:id="@+id/school"
+        android:onClick="school"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/round"
+        android:text="school"
+        android:textColor="@color/textColor"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Prince"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chancellor"
+        app:layout_constraintVertical_bias="0.15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

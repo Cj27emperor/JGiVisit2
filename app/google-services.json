@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "573640928573",
+    "firebase_url": "https://jgivisit-default-rtdb.firebaseio.com",
+    "project_id": "jgivisit",
+    "storage_bucket": "jgivisit.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573640928573:android:af47bec9e9456daabe2954",
+        "android_client_info": {
+          "package_name": "com.example.jgivisit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "573640928573-0tils136fa0kvpn738rqmc4f6op4timq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMY9pVOdJ36WEoF8TxlazmQwNbk8G7IBA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "573640928573-0tils136fa0kvpn738rqmc4f6op4timq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
