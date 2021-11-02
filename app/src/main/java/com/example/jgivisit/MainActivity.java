@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
 
         if(login==false){
+
             startActivity(new Intent(MainActivity.this,LandingPage.class));
         }
         list=(RelativeLayout)findViewById(R.id.list);

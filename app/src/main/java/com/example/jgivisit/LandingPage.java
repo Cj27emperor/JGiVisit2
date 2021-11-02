@@ -32,7 +32,7 @@ public class LandingPage extends AppCompatActivity {
 
     private final static int RC_SIGN_IN =123;
     private GoogleSignInClient mGoogleSignInClient;
-    protected Button g;
+    protected RelativeLayout g;
     private FirebaseAuth mAuth;
 
     @Override
@@ -51,7 +51,7 @@ public class LandingPage extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_landing_page);
 
-        g=(Button) findViewById(R.id.GoogleBtn);
+        g=(RelativeLayout) findViewById(R.id.google);
 
         mAuth=FirebaseAuth.getInstance();
         g.setOnClickListener(new View.OnClickListener() {
