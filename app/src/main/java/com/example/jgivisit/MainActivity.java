@@ -16,17 +16,19 @@ public class MainActivity extends AppCompatActivity {
         login=x;
     };
 
-
+    public static void exitApp(){
+        android.os.Process.killProcess(android.os.Process.myPid());
+        System.exit(0);
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
-
         if(login==false){
 
             startActivity(new Intent(MainActivity.this,LandingPage.class));
         }
+        setContentView(R.layout.activity_main);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);
         list=(RelativeLayout)findViewById(R.id.list);
         list.setOnClickListener(new View.OnClickListener() {
             @Override

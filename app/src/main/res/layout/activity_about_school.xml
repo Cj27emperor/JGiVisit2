@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to JGI"
+            android:text="About Schools"
             android:layout_margin="20dp"
             android:textColor="@color/textColor"
             android:textSize="30dp"/>
@@ -210,12 +210,15 @@
                 android:visibility="visible"/>
 
         </RelativeLayout>
-            <RelativeLayout
+            <ScrollView
                 android:id="@+id/health"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_toRightOf="@+id/creative"
+                android:layout_toRightOf="@+id/creative">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:background="@drawable/principle_line">
                 <Button
                     android:id="@+id/healthbtn"
@@ -242,8 +245,223 @@
                     android:layout_margin="10dp"
                     android:visibility="visible"/>
             </RelativeLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/science1"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/health">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/principle_line">
+                <Button
+                    android:id="@+id/science1btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:drawableTop="@drawable/school_of_science1"
+                    android:text="School of Sciences (Block 1)"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:contentDescription="School of Allied Healthcare and Sciences"/>
 
+                <TextView
+                    android:id="@+id/science1tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="School of Sciences (SoS) is an exclusive hub for postgraduate &amp; research studies that houses three departments in the general field of Life Sciences viz., Biochemistry, Biotechnology, Microbiology, including the Department of Physics. With state-of-the-art infrastructure, this center is renowned for its collaboration with prominent scientists in India and abroad."
+                    android:textSize="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/science1btn"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/science2"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/science1">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/principle_line">
+                    <Button
+                        android:id="@+id/science2btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:drawableTop="@drawable/school_of_science_block"
+                        android:text="School of Sciences (Block 2)"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                    <TextView
+                        android:id="@+id/science2tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="School of Sciences offers an excellent academic studies and research ambience. The wide range of undergraduate and postgraduate programs in the Faculty of Sciences strive for excellence in intellectual inquiry, academic freedom and integrity, and ethical practice in academic endeavours."
+                        android:textSize="20dp"
+                        android:textColor="@color/textColor"
+                        android:layout_below="@+id/science2btn"
+                        android:justificationMode="inter_word"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/cms"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/science2">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/principle_line">
+                <Button
+                    android:id="@+id/cmsbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round"
+                    android:drawableTop="@drawable/school_of_cms"
+                    android:text="Center for Management Studies"
+                    android:layout_margin="10dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                <TextView
+                    android:id="@+id/cmstv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                    android:textSize="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/cmsbtn"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+        </ScrollView>
+            <ScrollView
+                android:id="@+id/cmsb"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/cms">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/principle_line">
+                    <Button
+                        android:id="@+id/cmsbbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:drawableTop="@drawable/school_of_cms_business"
+                        android:text="Center for Management Studies"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                    <TextView
+                        android:id="@+id/cmsbtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                        android:textSize="20dp"
+                        android:textColor="@color/textColor"
+                        android:layout_below="@+id/cmsbbtn"
+                        android:justificationMode="inter_word"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/iiaem"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/cmsb">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/principle_line">
+                    <Button
+                        android:id="@+id/iiaembtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/round"
+                        android:drawableTop="@drawable/school_of_iiaem"
+                        android:text="Center for Management Studies"
+                        android:layout_margin="10dp"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                    <TextView
+                        android:id="@+id/iiaemtv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                        android:textSize="20dp"
+                        android:textColor="@color/textColor"
+                        android:layout_below="@+id/iiaembtn"
+                        android:justificationMode="inter_word"
+                        android:gravity="center"
+                        android:layout_margin="10dp"
+                        android:visibility="visible"/>
+                </RelativeLayout>
+            </ScrollView>
+                <ScrollView
+                    android:id="@+id/arts"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@+id/iiaem">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/principle_line">
+                        <Button
+                            android:id="@+id/artsbtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/round"
+                            android:drawableTop="@drawable/school_of_arts"
+                            android:text="Center for Management Studies"
+                            android:layout_margin="10dp"
+                            android:textColor="@color/textColor"
+                            android:textSize="20dp"
+                            android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                        <TextView
+                            android:id="@+id/artstv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </RelativeLayout>
+                </ScrollView>
         </RelativeLayout>
-
     </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

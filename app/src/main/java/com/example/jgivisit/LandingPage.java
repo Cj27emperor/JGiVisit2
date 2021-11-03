@@ -30,10 +30,12 @@ import static android.content.ContentValues.TAG;
 
 public class LandingPage extends AppCompatActivity {
 
+    private long backPressedTime;
     private final static int RC_SIGN_IN =123;
     private GoogleSignInClient mGoogleSignInClient;
     protected RelativeLayout g;
     private FirebaseAuth mAuth;
+
 
     @Override
     protected void onStart(){
@@ -62,6 +64,11 @@ public class LandingPage extends AppCompatActivity {
                 return;
             }
         });
+    }
+    @Override
+    public void onBackPressed(){
+        super.onBackPressed();
+            MainActivity.exitApp();
     }
     public void login(View view){
         startActivity(new Intent(LandingPage.this,Login.class));

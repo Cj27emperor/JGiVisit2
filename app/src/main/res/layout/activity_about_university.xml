@@ -27,31 +27,40 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Welcome to JGI"
-            android:layout_margin="20dp"
+            android:text="About University"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/textColor"
             android:textSize="30dp"/>
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/principle_line"
-        android:elevation="10dp"
-        android:layout_margin="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.7">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp"
+        android:elevation="10dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:textSize="20dp"
-            android:text="University:"
-            android:textColor="@color/textColor" />
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="About the University:"
+            android:textColor="@color/colorPrimary" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -62,7 +71,10 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
             android:text="\n  The University which is based in Bangalore – the Silicon Valley of India, offers a conducive environment for learning, be it academically or extracurricular activities. Known for its emphasis on education, entrepreneurship, research and sports, JAIN (Deemed-to-be University) has some of the best minds in the educational and research fields, and centers that inspire entrepreneurship and ground breaking work to simplify and manage life better.\n"
             android:textColor="@color/textColor"
             android:textSize="18dp"
@@ -71,6 +83,57 @@
             android:gravity="center"
             android:background="@drawable/round"
             android:elevation="10dp"/>
-    </LinearLayout>
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Vision:"
+            android:textColor="@color/colorPrimary" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="To foster human development through excellence in Quality Education, Research, and Entrepreneurial Development."
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:justificationMode="inter_word"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:background="@drawable/round"
+            android:elevation="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:text="Mission:"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="a) To provide quality education, creating human assets / manpower and intellectual capital.\n\n
+b)	To enhance research and development in different disciplines.
+\n\nc)	To develop new generation entrepreneurs who will be instrumental in fueling economic growth.
+\n\nd)	To create able Leaders, Managers, and Technocrats.
+\n\ne)	To foster an ethical environment founded on human values in which both spirit and skill will thrive to enrich the quality of life."
+            android:textColor="@color/textColor"
+            android:textSize="18dp"
+            android:justificationMode="inter_word"
+            android:layout_gravity="center_horizontal"
+            android:gravity="left"
+            android:background="@drawable/round"
+            android:elevation="10dp"/>
+    </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

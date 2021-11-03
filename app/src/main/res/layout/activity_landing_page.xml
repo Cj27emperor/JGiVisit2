@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="true"
-            android:text="Google Login"
+            android:text="Gmail Login"
             android:textColor="@color/black"
             android:textSize="20dp"
             android:textStyle="bold" />
