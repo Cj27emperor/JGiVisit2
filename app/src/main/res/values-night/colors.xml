@@ -6,5 +6,5 @@
     <color name="colorCardBackground">@color/l_blue</color>
     <color name="colorOnSecondary">@color/blue</color>
 
-    <color name="textColor">@color/white</color>
+    <color name="textColor">@color/black</color>
 </resources>
