@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutSchool">
+    tools:context=".AboutSchool"
+    android:background="@drawable/background">
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -18,17 +19,18 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:src="@drawable/jainlogo" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="About Schools"
+            android:text="About"
             android:layout_margin="20dp"
             android:textColor="@color/textColor"
+            android:textStyle="bold"
             android:textSize="30dp"/>
     </LinearLayout>
 
@@ -50,310 +52,408 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
-        <RelativeLayout
-            android:id="@+id/commerce"
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:background="@drawable/principle_line">
-            <Button
-                android:id="@+id/commercebtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:background="@drawable/round"
-                android:drawableTop="@drawable/school_of_commerce"
-                android:text="School Of Commerce"
-                android:textColor="@color/textColor"
-                android:textSize="20dp"
-                android:contentDescription="School Of Commerce"/>
-
-            <TextView
-                android:id="@+id/commercetv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="School of Interior Design offers a bachelors degree in Interior Design, an innovative program that helps students understand and challenge the ways in which people perceive a place."
-                android:textSize="20dp"
-                android:textColor="@color/textColor"
-                android:layout_below="@+id/commercebtn"
-                android:justificationMode="inter_word"
-                android:gravity="center"
-                android:layout_margin="10dp"
-                android:visibility="visible"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/cs"
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@+id/commerce"
-            android:background="@drawable/principle_line">
-            <Button
-                android:id="@+id/csbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/textColor"
-                android:drawableTop="@drawable/school_of_cs_it"
-                android:text="School Of Computer Science and Information Technology"
-                android:layout_margin="10dp"
-                android:textColor="@color/textColor"
-                android:textSize="20dp"
-                android:contentDescription="School Of Computer Science and Information Technology"/>
-
-            <TextView
-                android:id="@+id/cstv"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="School of Computer Science and IT offer a bachelors degree in computer applications, and masters programs with specialization in information security management services, infrastructure management services in IT and in storage and cloud technology."
-                android:textSize="20dp"
-                android:textColor="@color/textColor"
-                android:layout_below="@+id/csbtn"
-                android:justificationMode="inter_word"
-                android:gravity="center"
-                android:layout_margin="10dp"
-                android:visibility="visible"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/eng"
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@+id/cs"
-            android:background="@drawable/principle_line">
-            <Button
-                android:id="@+id/engbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round"
-                android:drawableTop="@drawable/school_of_engineering"
-                android:text="School Of Engineering and Technology"
-                android:layout_margin="10dp"
-                android:textColor="@color/textColor"
-                android:textSize="20dp"
-                android:contentDescription="School Of Engineering"/>
-
-            <TextView
-                android:id="@+id/engtv"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Focused on delivering world class educational experience, the School of Engineering and Technology is an integral part of the University's Faculty of Engineering and Technology and offers unique graduate, postgraduate, and specialized programs."
-                android:textSize="20dp"
-                android:textColor="@color/textColor"
-                android:layout_below="@+id/engbtn"
-                android:justificationMode="inter_word"
-                android:gravity="center"
-                android:layout_margin="10dp"
-                android:visibility="visible"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/human"
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@+id/eng"
-            android:background="@drawable/principle_line">
-            <Button
-                android:id="@+id/humanbtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round"
-                android:drawableTop="@drawable/school_of_humanities"
-                android:text="School of Humanities and Social Sciences"
-                android:layout_margin="10dp"
-                android:textColor="@color/textColor"
-                android:textSize="20dp"
-                android:contentDescription="School of Humanities and Social Sciences"/>
-
-            <TextView
-                android:id="@+id/humantv"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="School of Humanities and Social Sciences offers undergraduate and postgraduate programs in languages, psychology, performing arts, sociology, journalism, and mass communication."
-                android:textSize="20dp"
-                android:textColor="@color/textColor"
-                android:layout_below="@+id/humanbtn"
-                android:justificationMode="inter_word"
-                android:gravity="center"
-                android:layout_margin="10dp"
-                android:visibility="visible"/>
-        </RelativeLayout>
-        <RelativeLayout
-            android:id="@+id/creative"
-            android:layout_width="350dp"
-            android:layout_height="match_parent"
-            android:layout_margin="10dp"
-            android:layout_toRightOf="@+id/human"
-            android:background="@drawable/principle_line">
-            <Button
-                android:id="@+id/creativebtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/round"
-                android:drawableTop="@drawable/school_of_creative"
-                android:text="School of Creative Arts and Design"
-                android:layout_margin="10dp"
-                android:textColor="@color/textColor"
-                android:textSize="20dp"
-                android:contentDescription="School of Creative Arts and Design"/>
-
-            <TextView
-                android:id="@+id/creativetv"
+            <RelativeLayout
+                android:id="@+id/commerce"
                 android:layout_width="350dp"
-                android:layout_height="500dp"
-                android:text="School of Interior Design offers a bachelors degree in Interior Design, an innovative program that helps students understand and challenge the ways in which people perceive a place."
-                android:textSize="20dp"
-                android:textColor="@color/textColor"
-                android:layout_below="@+id/creativebtn"
-                android:justificationMode="inter_word"
-                android:gravity="center"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:visibility="visible"/>
+                android:background="@drawable/principle_line">
 
-        </RelativeLayout>
+                <Button
+                    android:id="@+id/commercebtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round"
+                    android:contentDescription="School Of Commerce"
+                    android:drawableTop="@drawable/school_of_commerce"
+                    android:text="School Of Commerce"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/commercetv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="School of Commerce offers a portfolio of graduate and postgraduate courses in the Faculty of Commerce and Management."
+                    android:textSize="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/commercebtn"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/cs"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/commerce"
+                android:background="@drawable/principle_line">
+
+                <Button
+                    android:id="@+id/csbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/textColor"
+                    android:contentDescription="School Of Computer Science and Information Technology"
+                    android:drawableTop="@drawable/school_of_cs_it"
+                    android:text="School Of Computer Science and Information Technology"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cstv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="School of Computer Science and IT offer a bachelors degree in computer applications, and masters programs with specialization in information security management services, infrastructure management services in IT and in storage and cloud technology."
+                    android:textSize="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/csbtn"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/eng"
+                android:layout_width="350dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/cs"
+                android:background="@drawable/principle_line">
+
+                <Button
+                    android:id="@+id/engbtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/round"
+                    android:contentDescription="School Of Engineering"
+                    android:drawableTop="@drawable/school_of_engineering"
+                    android:text="School Of Engineering and Technology"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/engtv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Focused on delivering world class educational experience, the School of Engineering and Technology is an integral part of the University's Faculty of Engineering and Technology and offers unique graduate, postgraduate, and specialized programs."
+                    android:textSize="20dp"
+                    android:textColor="@color/textColor"
+                    android:layout_below="@+id/engbtn"
+                    android:justificationMode="inter_word"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:visibility="visible"/>
+            </RelativeLayout>
+            <ScrollView
+                android:id="@+id/human"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/eng">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_humanities"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School of Humanities and Social Sciences"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School of Humanities and Social Sciences"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="School of Humanities and Social Sciences offers undergraduate and postgraduate programs in languages, psychology, performing arts, sociology, journalism, and mass communication."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/creative"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/human">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_creative"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School of Creative Arts and Design"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School of Creative Arts and Design"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="School of Interior Design offers a bachelors degree in Interior Design, an innovative program that helps students understand and challenge the ways in which people perceive a place."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
             <ScrollView
                 android:id="@+id/health"
-                android:layout_width="350dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/creative">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/principle_line">
-                <Button
-                    android:id="@+id/healthbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-                    android:drawableTop="@drawable/school_of_healthcare"
-                    android:text="School of Allied Healthcare and Sciences"
-                    android:layout_margin="10dp"
-                    android:textColor="@color/textColor"
-                    android:textSize="20dp"
-                    android:contentDescription="School of Allied Healthcare and Sciences"/>
-
-                <TextView
-                    android:id="@+id/healthtv"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="The School of Allied Health Care offers UG and PG programs that have been designed to prepare students to become excellent Health Care professionals and assistants and enhance their careers in the Health Care Industry, which is one of the largest growing sectors of today’s workforce. These programs will give an exceptional foundation to the students maximizing their occupational potential even at a global level."
-                    android:textSize="20dp"
-                    android:textColor="@color/textColor"
-                    android:layout_below="@+id/healthbtn"
-                    android:justificationMode="inter_word"
-                    android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:visibility="visible"/>
-            </RelativeLayout>
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_healthcare"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School of Allied Healthcare and Sciences"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:id="@+id/healthtv"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="The School of Allied Health Care offers UG and PG programs that have been designed to prepare students to become excellent Health Care professionals."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </ScrollView>
             <ScrollView
                 android:id="@+id/science1"
-                android:layout_width="350dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/health">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/principle_line">
-                <Button
-                    android:id="@+id/science1btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-                    android:drawableTop="@drawable/school_of_science1"
-                    android:text="School of Sciences (Block 1)"
-                    android:layout_margin="10dp"
-                    android:textColor="@color/textColor"
-                    android:textSize="20dp"
-                    android:contentDescription="School of Allied Healthcare and Sciences"/>
-
-                <TextView
-                    android:id="@+id/science1tv"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="School of Sciences (SoS) is an exclusive hub for postgraduate &amp; research studies that houses three departments in the general field of Life Sciences viz., Biochemistry, Biotechnology, Microbiology, including the Department of Physics. With state-of-the-art infrastructure, this center is renowned for its collaboration with prominent scientists in India and abroad."
-                    android:textSize="20dp"
-                    android:textColor="@color/textColor"
-                    android:layout_below="@+id/science1btn"
-                    android:justificationMode="inter_word"
-                    android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:visibility="visible"/>
-            </RelativeLayout>
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_science1"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School of Sciences (Block 1)"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="School of Sciences (Block 1)"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="School of Sciences (SoS) is an exclusive hub for postgraduate &amp; research studies that houses three departments in the general field of Life Sciences viz., Biochemistry, Biotechnology, Microbiology, including the Department of Physics."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </ScrollView>
+
             <ScrollView
                 android:id="@+id/science2"
-                android:layout_width="350dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/science1">
-                <RelativeLayout
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@drawable/principle_line">
-                    <Button
-                        android:id="@+id/science2btn"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/round"
-                        android:drawableTop="@drawable/school_of_science_block"
-                        android:text="School of Sciences (Block 2)"
-                        android:layout_margin="10dp"
-                        android:textColor="@color/textColor"
-                        android:textSize="20dp"
-                        android:contentDescription="School of Allied Healthcare and Sciences"/>
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_science_block"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School of Sciences (Block 2)"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="School of Sciences (Block 2)"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
 
-                    <TextView
-                        android:id="@+id/science2tv"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="School of Sciences offers an excellent academic studies and research ambience. The wide range of undergraduate and postgraduate programs in the Faculty of Sciences strive for excellence in intellectual inquiry, academic freedom and integrity, and ethical practice in academic endeavours."
-                        android:textSize="20dp"
-                        android:textColor="@color/textColor"
-                        android:layout_below="@+id/science2btn"
-                        android:justificationMode="inter_word"
-                        android:gravity="center"
-                        android:layout_margin="10dp"
-                        android:visibility="visible"/>
-                </RelativeLayout>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="School of Sciences offers an excellent academic studies and research ambience. The wide range of undergraduate and postgraduate programs in the Faculty of Sciences strive for excellence in intellectual inquiry, academic freedom and integrity, and ethical practice in academic endeavours."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </ScrollView>
+
             <ScrollView
                 android:id="@+id/cms"
                 android:layout_width="350dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:layout_toRightOf="@+id/science2">
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@drawable/principle_line">
-                <Button
-                    android:id="@+id/cmsbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/round"
-                    android:drawableTop="@drawable/school_of_cms"
-                    android:text="Center for Management Studies"
-                    android:layout_margin="10dp"
-                    android:textColor="@color/textColor"
-                    android:textSize="20dp"
-                    android:contentDescription="School of Allied Healthcare and Sciences"/>
-
-                <TextView
-                    android:id="@+id/cmstv"
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
-                    android:textSize="20dp"
-                    android:textColor="@color/textColor"
-                    android:layout_below="@+id/cmsbtn"
-                    android:justificationMode="inter_word"
-                    android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:visibility="visible"/>
-            </RelativeLayout>
-        </ScrollView>
+                    android:background="@drawable/principle_line">
+
+                    <Button
+                        android:id="@+id/cmsbtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/round"
+                        android:contentDescription="School of Allied Healthcare and Sciences"
+                        android:drawableTop="@drawable/school_of_cms"
+                        android:text="Center for Management Studies"
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/cmstv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/cmsbtn"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </ScrollView>
             <ScrollView
                 android:id="@+id/cmsb"
                 android:layout_width="350dp"
@@ -367,20 +467,21 @@
                     <Button
                         android:id="@+id/cmsbbtn"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="350dp"
                         android:background="@drawable/round"
                         android:drawableTop="@drawable/school_of_cms_business"
-                        android:text="Center for Management Studies"
+                        android:text="CMS BUSINESS SCHOOL"
                         android:layout_margin="10dp"
                         android:textColor="@color/textColor"
                         android:textSize="20dp"
+                        android:textStyle="bold"
                         android:contentDescription="School of Allied Healthcare and Sciences"/>
 
                     <TextView
                         android:id="@+id/cmsbtv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                        android:text="CMS Business School is the flagship postgraduate school of management of the University offering MBA programs, management development programs, and research programs relating to management."
                         android:textSize="20dp"
                         android:textColor="@color/textColor"
                         android:layout_below="@+id/cmsbbtn"
@@ -403,65 +504,85 @@
                     <Button
                         android:id="@+id/iiaembtn"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="400dp"
                         android:background="@drawable/round"
                         android:drawableTop="@drawable/school_of_iiaem"
-                        android:text="Center for Management Studies"
+                        android:text=" INTERNATIONAL INSTITUE FOR AEROSPACE ENGINEERING AND MANAGEMENT(IIAEM)"
                         android:layout_margin="10dp"
                         android:textColor="@color/textColor"
                         android:textSize="20dp"
+                        android:textStyle="bold"
                         android:contentDescription="School of Allied Healthcare and Sciences"/>
 
                     <TextView
                         android:id="@+id/iiaemtv"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
+                        android:layout_below="@+id/iiaembtn"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:justificationMode="inter_word"
+                        android:text="IIAEM is a collaborative venture between JAIN (Deemed-to-be University) and Society of Indian Aerospace Technologies and  Industries (SIATI)."
+                        android:textColor="@color/textColor"
+                        android:textSize="20dp"
+                        android:visibility="visible" />
+                </RelativeLayout>
+            </ScrollView>
+            <ScrollView
+                android:id="@+id/arts"
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_toRightOf="@+id/iiaem">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                    <ImageView
+                        android:id="@+id/artsbtn"
+                        android:layout_width="330dp"
+                        android:layout_height="400dp"
+                        android:background="@drawable/round"
+                        android:src="@drawable/school_of_arts"
+                        android:layout_margin="10dp"
+                        android:scaleType="centerCrop"
+                        android:contentDescription="School of Allied Healthcare and Sciences"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" CENTER FOR CREATIVE ARTS AND DESIGN"
+                        android:textColor="@color/textColor"
+                        android:background="@drawable/round"
+                        android:backgroundTint="@color/yellow"
+                        android:gravity="center"
+
+                        android:textSize="20dp"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/artstv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="The Center for Creative Arts and Design offers innovative programs that adapt itself to match the swift changes that are taking place in society, industry, and technology."
                         android:textSize="20dp"
                         android:textColor="@color/textColor"
-                        android:layout_below="@+id/iiaembtn"
+                        android:layout_below="@+id/artsbtn"
                         android:justificationMode="inter_word"
                         android:gravity="center"
                         android:layout_margin="10dp"
                         android:visibility="visible"/>
-                </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
             </ScrollView>
-                <ScrollView
-                    android:id="@+id/arts"
-                    android:layout_width="350dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:layout_toRightOf="@+id/iiaem">
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/principle_line">
-                        <Button
-                            android:id="@+id/artsbtn"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/round"
-                            android:drawableTop="@drawable/school_of_arts"
-                            android:text="Center for Management Studies"
-                            android:layout_margin="10dp"
-                            android:textColor="@color/textColor"
-                            android:textSize="20dp"
-                            android:contentDescription="School of Allied Healthcare and Sciences"/>
-
-                        <TextView
-                            android:id="@+id/artstv"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:text="Center for Management Studies offers a portfolio of undergraduate and postgraduate programs designed to stimulate and challenge ambitious minds as well as prepare students for managerial and specialist roles within the business and the public sector."
-                            android:textSize="20dp"
-                            android:textColor="@color/textColor"
-                            android:layout_below="@+id/artsbtn"
-                            android:justificationMode="inter_word"
-                            android:gravity="center"
-                            android:layout_margin="10dp"
-                            android:visibility="visible"/>
-                    </RelativeLayout>
-                </ScrollView>
         </RelativeLayout>
     </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

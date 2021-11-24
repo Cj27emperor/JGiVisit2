@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">@color/orange</color>
-    <color name="colorBackground">@color/d_blue</color>
+    <color name="colorPrimary">@color/d_blue</color>
+    <color name="colorBackground">@color/l_blue</color>
     <color name="colorSecondary">@color/yellow</color>
-    <color name="colorCardBackground">@color/l_blue</color>
+    <color name="colorCardBackground">@color/d_blue</color>
     <color name="colorOnSecondary">@color/blue</color>
 
     <color name="textColor">@color/black</color>

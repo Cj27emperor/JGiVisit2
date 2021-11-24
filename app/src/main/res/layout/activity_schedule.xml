@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Schedule">
+    tools:context=".Schedule"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,9 +20,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_margin="20dp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
             android:src="@drawable/jainlogo" />
 
         <TextView
@@ -41,18 +42,65 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                android:src="@drawable/day1"/>
+                android:id="@+id/experiment"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page1" />
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                android:src="@drawable/day2"/>
+                android:id="@+id/experiment1"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page2" />
+
             <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="500dp"
-                android:src="@drawable/day12"/>
+                android:id="@+id/experiment2"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page3" />
+            <ImageView
+                android:id="@+id/experiment4"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page4" />
+            <ImageView
+                android:id="@+id/experiment5"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page5" />
+            <ImageView
+                android:id="@+id/experiment50"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page50" />
+            <ImageView
+                android:id="@+id/experiment6"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page6" />
+            <ImageView
+                android:id="@+id/experiment7"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page7" />
+            <ImageView
+                android:id="@+id/experiment8"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page8" />
+            <ImageView
+                android:id="@+id/experiment9"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page9" />
+            <ImageView
+                android:id="@+id/experiment10"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/page10" />
+
         </LinearLayout>
     </ScrollView>
 

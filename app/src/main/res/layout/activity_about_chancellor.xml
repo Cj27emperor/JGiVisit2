@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AboutChancellor">
+    tools:context=".AboutChancellor"
+    android:background="@drawable/background">
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -19,10 +20,10 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="40dp"
-            android:layout_margin="20dp"
-            android:src="@drawable/jainlogo" />
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/jainlogo" />/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -30,45 +31,62 @@
             android:text="About Chancellor"
             android:layout_marginTop="20dp"
             android:textColor="@color/textColor"
-            android:textSize="30dp"/>
+            android:textStyle="bold"
+            android:textSize="25dp"/>
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/principle_line"
-        android:elevation="10dp"
-        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintVertical_bias="0.7">
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:text="Chancellor:"
-            android:textColor="@color/colorPrimary"/>
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:src="@drawable/leadership" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:text="\nDr. Chenraj Roychand, a distinguished Indian educationist, entrepreneur, angel investor and philanthropist with over 39 years of experience, is the Chancellor of JAIN (Deemed-to-be University). His vision to generate a culture of educational excellence has led to the development of numerous successful educational institutions pan India. JAIN (Deemed-to-be University) is one of the prominent institutes among them.\n"
-            android:textColor="@color/textColor"
-            android:textSize="18dp"
-            android:justificationMode="inter_word"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:background="@drawable/round"
-            android:elevation="10dp"/>
-    </LinearLayout>
+            app:cardCornerRadius="20dp"
+            app:cardElevation="70dp"
+            android:background="@color/white"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:backgroundTint="@color/white"
+                android:background="@drawable/principle_line">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:src="@drawable/leadership"
+                    android:scaleType="centerCrop"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:text="Chancellor"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimary"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Dr. Chenraj Roychand, a distinguished Indian educationist, entrepreneur, angel investor and philanthropist with over 39 years of experience, is the Chancellor of JAIN (Deemed-to-be University). His vision to generate a culture of educational excellence has led to the development of numerous successful educational institutions pan India."
+                    android:textColor="@color/textColor"
+                    android:textSize="18dp"
+                    android:justificationMode="inter_word"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:background="@drawable/round"
+                    android:elevation="10dp"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
