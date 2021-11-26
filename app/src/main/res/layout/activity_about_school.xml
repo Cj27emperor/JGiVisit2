@@ -88,80 +88,105 @@
                     android:layout_margin="10dp"
                     android:visibility="visible"/>
             </RelativeLayout>
-            <RelativeLayout
+            <ScrollView
                 android:id="@+id/cs"
-                android:layout_width="350dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_toRightOf="@+id/commerce"
-                android:background="@drawable/principle_line">
-
-                <Button
-                    android:id="@+id/csbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="350dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@color/textColor"
-                    android:contentDescription="School Of Computer Science and Information Technology"
-                    android:drawableTop="@drawable/school_of_cs_it"
-                    android:text="School Of Computer Science and Information Technology"
-                    android:textColor="@color/textColor"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/cstv"
+                android:layout_toRightOf="@+id/commerce">
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="School of Computer Science and IT offer a bachelors degree in computer applications, and masters programs with specialization in information security management services, infrastructure management services in IT and in storage and cloud technology."
-                    android:textSize="20dp"
-                    android:textColor="@color/textColor"
-                    android:layout_below="@+id/csbtn"
-                    android:justificationMode="inter_word"
-                    android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:visibility="visible"/>
-            </RelativeLayout>
-            <RelativeLayout
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_cs_it"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School Of Computer Science and Information Technology"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="School Of Computer Science and Information Technology"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="School of Computer Science and IT offer a bachelors degree in computer applications, and masters programs with specialization in information security management services, infrastructure management services in IT and in storage and cloud technology."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:layout_below="@+id/artsbtn"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
+            <ScrollView
                 android:id="@+id/eng"
-                android:layout_width="350dp"
+                android:layout_width="330dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:layout_toRightOf="@+id/cs"
-                android:background="@drawable/principle_line">
-
-                <Button
-                    android:id="@+id/engbtn"
-                    android:layout_width="match_parent"
-                    android:layout_height="350dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="10dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@drawable/round"
-                    android:contentDescription="School Of Engineering"
-                    android:drawableTop="@drawable/school_of_engineering"
-                    android:text="School Of Engineering and Technology"
-                    android:textColor="@color/textColor"
-                    android:textSize="20dp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/engtv"
+                android:layout_toRightOf="@+id/cs">
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Focused on delivering world class educational experience, the School of Engineering and Technology is an integral part of the University's Faculty of Engineering and Technology and offers unique graduate, postgraduate, and specialized programs."
-                    android:textSize="20dp"
-                    android:textColor="@color/textColor"
-                    android:layout_below="@+id/engbtn"
-                    android:justificationMode="inter_word"
-                    android:gravity="center"
-                    android:layout_margin="10dp"
-                    android:visibility="visible"/>
-            </RelativeLayout>
+                    app:cardCornerRadius="20dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/school">
+                        <ImageView
+                            android:layout_width="330dp"
+                            android:layout_height="350dp"
+                            android:background="@drawable/round"
+                            android:src="@drawable/school_of_engineering"
+                            android:layout_margin="10dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="School Of Engineering"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="School Of Engineering"
+                            android:textColor="@color/textColor"
+                            android:background="@drawable/round"
+                            android:backgroundTint="@color/yellow"
+                            android:gravity="center"
+                            android:textSize="20dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Focused on delivering world class educational experience, the School of Engineering and Technology is an integral part of the University's Faculty of Engineering and Technology and offers unique graduate, postgraduate, and specialized programs."
+                            android:textSize="20dp"
+                            android:textColor="@color/textColor"
+                            android:justificationMode="inter_word"
+                            android:gravity="center"
+                            android:layout_margin="10dp"
+                            android:visibility="visible"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </ScrollView>
+
+
             <ScrollView
                 android:id="@+id/human"
                 android:layout_width="330dp"
